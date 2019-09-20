@@ -1,0 +1,74 @@
+gcs:
+  enabled: true
+  bucket: absolute-router-242207-spinnaker-conf
+  project: absolute-router-242207
+  jsonKey: '{
+  "type": "service_account",
+  "project_id": "absolute-router-242207",
+  "private_key_id": "1e40218cc9b2c28a1d9098c7d04f9e6253804b4f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDL4IqRiG2AcRC4\n7IBCHQ6GPjDbrO+tZ1wbqmSh9JXwwjIj/uW32nKnkdcqwceTdDb/zKGa2ON1RM61\nRxZhgUN3wprygVPp1dUGngBMDz+XUjWfeLK2zwnXkZt0ObAA/+1S6uKlsq+YAF40\nomZRieWc37kYyP/INguxQPVrVUlh63AjLbDUc7Ke4lVMwJF8ioA2Ps6LcQ7Smt2h\n0EclPKi2OnaKGWVWcfRZymn/xQi1FFYnWd25wSl4lGDcVGDucMy60+uBxf6DHcUs\nl7oLkC+uCHwDnBg1oUUqlYt/oYjNKUKl1ZfToZPb6ad8RQPTCVO/mKNq5cvkuz/y\no2uC44krAgMBAAECggEAAII9KoxTuUg1WK3QugEgjFFoty74WBpIOcg/ZaEI77i6\nIA5iRJpbhbIbDlBqTgtwfHnnlafdE/5kjDCjJCQb4MbSjjVrQZdnTxiW8+BXLc+z\n0LcGac7Q+fOzONwKEZJhKGUBwoNvMSXqGLRCwSGIvwJW8DauPvdB/2vK8oKMQ24q\njMC+3lL4ulmSqLYPt0sXvROS8p7gnAC8lBsJ+CPL6vzSzcTVcNn/O3WU1Zu9XEFh\nd5KQiyo7+uZYGBt+n7dngf7PWUjcjxtz+XPMIW1UC7eo56zKlHptoT4rUvCPnMZ9\nJYalIz8LUJFwMtB7I6kWXghYfzBQiOOudzKxSmr2VQKBgQDwE1HYaQq+oXDKiaks\nfV0w/htdK9qZfXGMP1ZNU0EgKjMT5GC4PuxiWosoc/7Nx6+QOCMruFefNe7YAOAR\nq1X4+iuIxv5n5g3WRSozLOi0XhElcaTR0rktgpbPu+fmS0iREusIV+S3B7C5n+yy\nh73OZBNzlTAUHiAPiK+8lQTiPwKBgQDZZosmYOGumjY3BD8a9TgsJpYgFCYojEPz\nejpg5ocTRbcxB3oPew0CRCmLWAXktGbHy+93qtBh5QVnvVHQkWWdWEN38+o4KlK0\n+fVau3uHik00l3cnxlry+2bS5VotNerVlZkRfaykyKraGWPJnVqcBFDAqTZx+c5f\ngwa5YPCGFQKBgBlGr3NNe+geLzXj0H/yowEpf9ALcfR/FJljgb6aaVztlHsfrF85\noMGqLsSPkeAwifdxMaLEwdTtZLwxO2Yg1+hiznqUGOzvd717grnonIeA7+U1VdkR\nipWUDjTI392LR5SenUg/mMD8ekrQ36bcS8uTFckxh+JWWaHJDleYiO8ZAoGBAMXu\nirpCcrcZSEsG3r2YjbAE4aILNkKskiFXI1eeC1UMoCFPgV4e1lU94eUwGw2DAiDe\nGASHzHmUnjs5LwgJmM6M0cCgnprMTcjf2vbkwy9AR9KeJKpd+ehH4/IXRubqtAgJ\nz/cQyOKuoH85ppSlYx2xACSo6x0SJ0bmcHTPQa2RAoGAchD+n6r2UX/d11r7KjzH\nR0h+dSZuuUqv2Vj0qC/OEOw40pCW8oRIvAp3UmCDlv6y8Pc+TqaQiyLeO0U04Fuq\nAbhQ5Zw4JBshgb4k39gkzXFWpI/twmgzjXg44AvT+ekEgpOpxSwESkWN0NJoolnJ\nOhJPJA7rHNYuP4Ld0HSCYt8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spinnaker-store-sa-id@absolute-router-242207.iam.gserviceaccount.com",
+  "client_id": "106180911419735979417",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spinnaker-store-sa-id%40absolute-router-242207.iam.gserviceaccount.com"
+}
+'
+
+dockerRegistries:
+- name: gcr
+  address: https://gcr.io
+  username: _json_key
+  password: '{
+  "type": "service_account",
+  "project_id": "absolute-router-242207",
+  "private_key_id": "1e40218cc9b2c28a1d9098c7d04f9e6253804b4f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDL4IqRiG2AcRC4\n7IBCHQ6GPjDbrO+tZ1wbqmSh9JXwwjIj/uW32nKnkdcqwceTdDb/zKGa2ON1RM61\nRxZhgUN3wprygVPp1dUGngBMDz+XUjWfeLK2zwnXkZt0ObAA/+1S6uKlsq+YAF40\nomZRieWc37kYyP/INguxQPVrVUlh63AjLbDUc7Ke4lVMwJF8ioA2Ps6LcQ7Smt2h\n0EclPKi2OnaKGWVWcfRZymn/xQi1FFYnWd25wSl4lGDcVGDucMy60+uBxf6DHcUs\nl7oLkC+uCHwDnBg1oUUqlYt/oYjNKUKl1ZfToZPb6ad8RQPTCVO/mKNq5cvkuz/y\no2uC44krAgMBAAECggEAAII9KoxTuUg1WK3QugEgjFFoty74WBpIOcg/ZaEI77i6\nIA5iRJpbhbIbDlBqTgtwfHnnlafdE/5kjDCjJCQb4MbSjjVrQZdnTxiW8+BXLc+z\n0LcGac7Q+fOzONwKEZJhKGUBwoNvMSXqGLRCwSGIvwJW8DauPvdB/2vK8oKMQ24q\njMC+3lL4ulmSqLYPt0sXvROS8p7gnAC8lBsJ+CPL6vzSzcTVcNn/O3WU1Zu9XEFh\nd5KQiyo7+uZYGBt+n7dngf7PWUjcjxtz+XPMIW1UC7eo56zKlHptoT4rUvCPnMZ9\nJYalIz8LUJFwMtB7I6kWXghYfzBQiOOudzKxSmr2VQKBgQDwE1HYaQq+oXDKiaks\nfV0w/htdK9qZfXGMP1ZNU0EgKjMT5GC4PuxiWosoc/7Nx6+QOCMruFefNe7YAOAR\nq1X4+iuIxv5n5g3WRSozLOi0XhElcaTR0rktgpbPu+fmS0iREusIV+S3B7C5n+yy\nh73OZBNzlTAUHiAPiK+8lQTiPwKBgQDZZosmYOGumjY3BD8a9TgsJpYgFCYojEPz\nejpg5ocTRbcxB3oPew0CRCmLWAXktGbHy+93qtBh5QVnvVHQkWWdWEN38+o4KlK0\n+fVau3uHik00l3cnxlry+2bS5VotNerVlZkRfaykyKraGWPJnVqcBFDAqTZx+c5f\ngwa5YPCGFQKBgBlGr3NNe+geLzXj0H/yowEpf9ALcfR/FJljgb6aaVztlHsfrF85\noMGqLsSPkeAwifdxMaLEwdTtZLwxO2Yg1+hiznqUGOzvd717grnonIeA7+U1VdkR\nipWUDjTI392LR5SenUg/mMD8ekrQ36bcS8uTFckxh+JWWaHJDleYiO8ZAoGBAMXu\nirpCcrcZSEsG3r2YjbAE4aILNkKskiFXI1eeC1UMoCFPgV4e1lU94eUwGw2DAiDe\nGASHzHmUnjs5LwgJmM6M0cCgnprMTcjf2vbkwy9AR9KeJKpd+ehH4/IXRubqtAgJ\nz/cQyOKuoH85ppSlYx2xACSo6x0SJ0bmcHTPQa2RAoGAchD+n6r2UX/d11r7KjzH\nR0h+dSZuuUqv2Vj0qC/OEOw40pCW8oRIvAp3UmCDlv6y8Pc+TqaQiyLeO0U04Fuq\nAbhQ5Zw4JBshgb4k39gkzXFWpI/twmgzjXg44AvT+ekEgpOpxSwESkWN0NJoolnJ\nOhJPJA7rHNYuP4Ld0HSCYt8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spinnaker-store-sa-id@absolute-router-242207.iam.gserviceaccount.com",
+  "client_id": "106180911419735979417",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spinnaker-store-sa-id%40absolute-router-242207.iam.gserviceaccount.com"
+}
+'
+  email: 1234@5678.com
+
+# Disable minio as the default storage backend
+minio:
+  enabled: false
+
+jenkins:
+  enabled: false
+
+# Configure Spinnaker to enable GCP services
+halyard:
+  spinnakerVersion: 1.16.0
+  image:
+    tag: 1.23.2
+    #tag: 1.16.0
+  additionalScripts:
+    create: true
+    data:
+      enable_gcs_artifacts.sh: |-
+        $HAL_COMMAND config artifact gcs account add gcs-absolute-router-242207 --json-path /opt/gcs/key.json
+        $HAL_COMMAND config artifact gcs enable
+      enable_pubsub_triggers.sh: |-
+        $HAL_COMMAND config pubsub google enable
+        $HAL_COMMAND config pubsub google subscription add spinnaker-subscription --subscription-name spinnaker-subscription --json-path /opt/gcs/key.json --project absolute-router-242207 --message-format GCB
+
+kubeConfig:
+  enabled: true
+  secretName: spin-kubeconfig
+  secretKey: spinnaker-kubeconfig
+  contexts:
+  - core
+  deploymentContext: core
+
+#serviceAccount:
+#  create: false
+#  create: true
+#  halyardName:
+#  spinnakerName:
+
