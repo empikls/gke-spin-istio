@@ -76,7 +76,7 @@ variable "project_name" {
 }
 
 variable "gloud_creds_file" {
-  default = "~/.json/terr.json"
+  default = "~/account.json"
 }
 
 variable "machine_type_cluster" {
