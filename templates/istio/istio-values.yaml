@@ -57,8 +57,8 @@ mixer:
 grafana:
     enabled: true
     image:
-        repository:gcr.io/our
-        tag:1.6
+        repository: gcr.io/our
+        tag: 1.6
     dashboardProviders:
         dashboardproviders.yaml:
             apiVersion: 1
